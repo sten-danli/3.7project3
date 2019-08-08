@@ -1,21 +1,19 @@
 ﻿// project3.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
-#include "Men.h"
+#include "Women.h"
 #include <iostream>
 using namespace std;
 
 
-
-void Men::eat()
+void  Women::eat()
 {
-	cout << "调动Men的 eat()" << endl;
+	cout << "调动Women eat()" << endl;
 }
 
-
-Men::Men()
+Women::Women()
 {
 	
-	cout << "执行了不带参数构造函数Men::Men()" << endl;
+	cout << "执行了不带参数构造函数Women::Women()" << endl;
 	 m_Age=12;
 	 cout << m_Age<<endl;
 }
@@ -26,14 +24,14 @@ Men::Men()
 //}
 
 
-void Men::printtest(int)
+void Women::printtest(int)
 {
 	// Human::printtest(12);
 
 	cout << "调动子类的带参数的printtest(int)" << endl;
 }
 
-void Men::add_age(int age)
+void Women::add_age(int age)
 {
 	m_Age += age;
 	cout << m_Age << endl;

@@ -1,23 +1,19 @@
-﻿#ifndef __MEN__H__
-#define __MEN__H__
+﻿#ifndef __WOMEN__H__
+#define __WOMEN__H__
 #include <iostream>
 #include "Human.h"
 using namespace std;
 
 //定义子类
-class Men : public Human
+class Women : public Human
 {
 
-	virtual void eat()override;
-	//override是为了防止用virtual时必须子类的函数和父类函数一模一样，当不一样时overide会提出错误。
-
+public:
+	virtual void  eat()override;//override是为了防止用virtual时必须子类的函数和父类函数一模一样，当不一样时overide会提出错误。
 
 
 public:
-	Men();//不带参数构造函数声明。
-
-public:
-	void funcMen();
+	Women();
 	
 
 public:

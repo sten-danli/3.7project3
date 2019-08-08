@@ -9,6 +9,11 @@ using namespace std;
 class Human
 {
 	
+public: 
+	virtual void eat();
+
+
+
 public:
 	Human();
 	Human(int);
@@ -17,13 +22,25 @@ protected:
 	int m_Age;
 	char m_Name[100];
 
-
+public: 
+	void funcHumen()//inline 函数使用，因为直接在.h内定义了函数。
+	{
+		cout << "调用funchumen函数" << endl;
+	}
 
 public:
 	
 	void printtest();//子类中创建了同名函数。
 	void printtest(int);//子类中创建了同名函数。
 	//如果子类和父类的函数都是同名的话，那么子类会覆盖父类的函数，如果非要想调动父类的函数的话，那么只能在子类的函数中调查父类的函数。
+
+
+
+
+
+
+
+
 
 };
 

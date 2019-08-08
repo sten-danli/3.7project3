@@ -5,6 +5,10 @@
 using namespace std;
 
 
+void Human:: eat()
+{
+	cout << "调动Human eat()" << endl;
+}
 
 Human::Human()
 {
@@ -24,3 +28,5 @@ void Human:: printtest(int)
 {
 	cout << "调动父类的带参数的printtest(int)" << endl;
 }
+
+
