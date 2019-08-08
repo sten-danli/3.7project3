@@ -1,4 +1,6 @@
-﻿#ifndef __HUMAN__H__
+﻿// Human.h : //基类指针_纯虚函数_多态_虚析构
+
+#ifndef __HUMAN__H__
 #define __HUMAN__H__
 #include <iostream>
 using namespace std;
@@ -8,15 +10,27 @@ using namespace std;
 //定义基类
 class Human
 {
+public:	//声明一个纯虚函数，1.函数纯虚函数的类 叫做抽象类，不能用来生成该类的对象，主要用于当作父类生成子类用的，
+	//这样大家不会忘记在子类中都要定义什么函数方法。
+
+	virtual void sleep() = 0;
 	
+
+
 public: 
-	virtual void eat();
+	virtual void eat();//虚函数
 
 
 
 public:
 	Human();
 	Human(int);
+	virtual ~Human();
+	//因为在Human *phuman = new Men;时只是放了父类的析构函数儿子类没有释放所以这里用virtual。
+	//只执行了Human::~Human()
+	//这时就很糟糕因为他只析构了父类的析构函数，而没有析构子类的析构函数，只删除了一半造成内存泄漏。
+	//结论;用基类指针new子类的对象，在delete的收系统不会调用派生类的析构函数。这跟定有问题了
+	//如何解决.把父类中.h定义虚函数的时候写成虚析构函数:virtual ~Human();
 
 protected:
 	int m_Age;

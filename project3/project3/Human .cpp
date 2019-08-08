@@ -1,4 +1,5 @@
-﻿// project3.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+﻿// Human.cpp : // project3.cpp : //基类指针_纯虚函数_多态_虚析构
+
 //
 #include "Human.h"
 #include <iostream>
@@ -17,6 +18,12 @@ Human::Human()
 Human::Human(int h)
 {
 	cout << "执行了带参数构造函数Human::Human(int)" << endl;
+}
+
+Human::~Human()
+{
+	cout << "执行了Human::~Human()" << endl;
+
 }
 
 void Human::printtest()

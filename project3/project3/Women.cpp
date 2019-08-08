@@ -1,9 +1,14 @@
-﻿// project3.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿// Women.cpp : // project3.cpp : //基类指针_纯虚函数_多态_虚析构
+
 #include "Women.h"
 #include <iostream>
 using namespace std;
 
+
+void Women::sleep()
+{
+	cout << "调动Women sleep()函数" << endl;
+}
 
 void  Women::eat()
 {
@@ -17,6 +22,13 @@ Women::Women()
 	 m_Age=12;
 	 cout << m_Age<<endl;
 }
+
+Women::~Women()
+
+	{
+		cout << "执行了Women::~Women()" << endl;
+	}
+
 
 //void Men::printtest()
 //{

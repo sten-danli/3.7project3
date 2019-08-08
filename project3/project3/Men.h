@@ -3,10 +3,13 @@
 #include <iostream>
 #include "Human.h"
 using namespace std;
+// Men.h : //基类指针_纯虚函数_多态_虚析构
 
 //定义子类
 class Men : public Human
 {
+
+	virtual void sleep();
 
 	virtual void eat()override;
 	//override是为了防止用virtual时必须子类的函数和父类函数一模一样，当不一样时overide会提出错误。
@@ -15,6 +18,7 @@ class Men : public Human
 
 public:
 	Men();//不带参数构造函数声明。
+	~Men();
 
 public:
 	void funcMen();

@@ -159,6 +159,7 @@
   <ItemGroup>
     <ClInclude Include="Human.h" />
     <ClInclude Include="Men.h" />
+    <ClInclude Include="project3.h" />
     <ClInclude Include="Women.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

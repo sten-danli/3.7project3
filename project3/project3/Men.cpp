@@ -1,10 +1,14 @@
-﻿// project3.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿// Men.cpp : // project3.cpp : //基类指针_纯虚函数_多态_虚析构
 #include "Men.h"
 #include <iostream>
 using namespace std;
 
 
+
+void Men::sleep()
+{
+	cout << "调用Men spleep函数" << endl;
+}
 
 void Men::eat()
 {
@@ -18,6 +22,16 @@ Men::Men()
 	cout << "执行了不带参数构造函数Men::Men()" << endl;
 	 m_Age=12;
 	 cout << m_Age<<endl;
+}
+
+Men::~Men()
+{
+	cout << "执行了Men::~Men" << endl;
+}
+
+void Men::funcMen()
+{
+	cout << "调动了funcman()函数" << endl;
 }
 
 //void Men::printtest()
