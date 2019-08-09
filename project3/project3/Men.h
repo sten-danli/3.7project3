@@ -2,13 +2,24 @@
 #define __MEN__H__
 #include <iostream>
 #include "Human.h"
+
 using namespace std;
 // Men.h : //基类指针_纯虚函数_多态_虚析构
 
 //定义子类
 class Men : public Human
 {
+	//因为友元函数不属于成员，所以友元函数声明不受public，protected，private。
+	friend void func(const Men& tempmen);
+	
+private:
+	void funcmen()const;
+	//只要让函数func成为类Men的友元函数，那么func这个函数就能访问类Men的所有成员，成员变量，成员函数，public,protected,private
 
+
+
+
+public:
 	virtual void sleep();
 
 	virtual void eat()override;
@@ -20,8 +31,7 @@ public:
 	Men();//不带参数构造函数声明。
 	~Men();
 
-public:
-	void funcMen();
+
 	
 
 public:

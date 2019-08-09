@@ -151,12 +151,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="func.cpp" />
     <ClCompile Include="Human .cpp" />
     <ClCompile Include="Men.cpp" />
     <ClCompile Include="project3.cpp" />
     <ClCompile Include="Women.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="func.h" />
     <ClInclude Include="Human.h" />
     <ClInclude Include="Men.h" />
     <ClInclude Include="project3.h" />

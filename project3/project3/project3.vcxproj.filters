@@ -27,6 +27,9 @@
     <ClCompile Include="Women.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="func.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Human.h">
@@ -39,6 +42,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="project3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="func.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

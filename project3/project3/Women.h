@@ -7,7 +7,7 @@
 using namespace std;
 
 //定义子类
-class Women : public Human
+class Women : public Human 
 {
 	virtual void sleep();
 
@@ -25,7 +25,7 @@ public:
 	void printtest(int);//父类中有同名函数。
 
 public:
-	using Human::printtest;//而在子类中只要一个using父类的函数那么将所有同名函数都用父类的。
+	//using Human::printtest;//而在子类中只要一个using父类的函数那么将所有同名函数都用父类的。
 
 
 

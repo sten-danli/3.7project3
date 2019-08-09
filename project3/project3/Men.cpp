@@ -29,10 +29,13 @@ Men::~Men()
 	cout << "执行了Men::~Men" << endl;
 }
 
-void Men::funcMen()
+
+void Men::funcmen() const
 {
 	cout << "调动了funcman()函数" << endl;
 }
+
+
 
 //void Men::printtest()
 //{

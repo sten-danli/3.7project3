@@ -4,10 +4,29 @@
 #include "Human.h"
 #include "Men.h"
 #include "Women.h"
+#include "func.h"
 #include "project3.h"
+
+
 
 int main()
 {
+	
+	//firend 
+
+	//一:友元函数，
+	//public,protected,private
+	//只要让函数func成为类Men的友元函数，那么func这个函数就能访问类Men的所有成员，成员变量，成员函数，public,protected,private
+	Men friendmen;
+	func(friendmen);
+	//总结 友元函数func是个函数，通过声明为某个类Men的友元函数，他就可以访问这个类Men的所有成员，包括public，protected，private。
+	
+	//友元类，
+	
+
+
+
+
 	
 	//Men men;
 	//men.printtest();//这个对象将从父类调取。
@@ -32,6 +51,10 @@ int main()
 	human->Human::eat();//调动human eat()函数。
 	human = new Men;
 	human->eat();
+	
+	
+	
+	
 	//总结什么时候用到虚函数virtual当各类中的函数名函数体都一抹一样的话为了方便调用各个类中的同名函数就可以使用virtual方法。
 	////override是为了防止用virtual时必须子类的函数和父类函数一模一样，当不一样时overide会提出错误,这个关键字用在子类中，为
 	//虚函数专用。override就是用来说明派生类中的虚函数，你用了这个关键字后，编译器
@@ -60,6 +83,7 @@ int main()
 	//五 父类的析构函数一般写成虚构函数。
 	//1
 	Women women;
+
 	/*运行后正常的执行了以下析构语句
 	执行了Women::~Women()
 	执行了Human::~Human()*/
@@ -67,6 +91,9 @@ int main()
 	//2
 	//如果是new出来的东西话就用delete 方法，如下
 	Men* men = new Men;
+	//men->funcmen();
+	Men men1;
+	//men1.funcmen();
 	//然后用delete方法释放内存
 	//delete men;
 
